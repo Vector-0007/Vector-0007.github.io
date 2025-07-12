@@ -3,60 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kushagra Singh| Electronics Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <title> Kushagra Singh | ECE Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
-    body { background-color: #f7f9fb; color: #333; line-height: 1.6; }
-    header { background: #1e293b; color: white; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2.5rem; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    body { background: #f3f4f6; color: #1f2937; }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeDown 1s ease-in-out;
+    }
+    header h1 { font-size: 3rem; }
     header p { font-size: 1.2rem; margin-top: 0.5rem; }
-    section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
-    h2 { color: #1e293b; margin-bottom: 1rem; font-size: 1.8rem; }
-    .project, .skill { background: white; padding: 1rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    .project a { color: #2563eb; text-decoration: none; }
-    footer { text-align: center; padding: 2rem 1rem; background: #e2e8f0; font-size: 0.9rem; }
+
+    section { max-width: 960px; margin: auto; padding: 2rem 1rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; color: #1e3a8a; }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e3a8a;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      background: #1e3a8a;
+      color: white;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Kushagra Singh</h1>
-    <p>Electronics & Communication Engineering Student | Project Builder | Future Innovator</p>
+    <p>ECE Student | Circuit Builder | Portfolio Showcase</p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <div class="project">
-      <p>Hi! I'm an ECE student passionate about electronics and real-world projects. I love building simple circuits, simulating ideas on Tinkercad, and turning concepts into working models.</p>
+    <div class="card">
+      <p>I am an Electronics and Communication Engineering student passionate about practical learning. I love building real-world electronics projects and sharing my work through simulations and portfolio websites.</p>
     </div>
   </section>
 
   <section>
     <h2>Projects</h2>
-    <div class="project">
+    <div class="card">
       <h3>Automatic Street Light</h3>
-      <p><strong>Tools:</strong> LDR, Breadboard, NPN Transistor, Tinkercad</p>
-      <p>This project automatically switches ON an LED when it gets dark and OFF when it's bright using an LDR and a transistor. Built using analog components on Tinkercad.</p>
-      <p><a href="https://www.tinkercad.com/things/hLHWZJMwco9/editel?returnTo=%2Fdashboard&sharecode=nCYyyeMziBkWVX8Kkx-W4Z-BX1WkG7Ns5QJTz_5VwTI">🔗 View Simulation (Tinkercad Link Here)</a></p>
+      <p>This project uses an LDR and NPN transistor to automatically switch ON an LED when it’s dark and turn it OFF in bright light. Built using analog components and simulated on Tinkercad.</p>
+      <p><strong>Tools:</strong> LDR, Breadboard, 2N2222 Transistor, Resistors, LED, 9V Battery</p>
+      <a href="https://www.tinkercad.com/things/hLHWZJMwco9/editel?returnTo=%2Fdashboard&sharecode=nCYyyeMziBkWVX8Kkx-W4Z-BX1WkG7Ns5QJTz_5VwTI" target="_blank">🔗 View Simulation on Tinkercad</a>
+      <img src="Amazing Borwo-Wluff.png" alt="Automatic Street Light Circuit Screenshot">
     </div>
-    <!-- More projects can be added here -->
   </section>
 
   <section>
     <h2>Skills</h2>
-    <div class="skill">
-      <ul>
-        <li>Electronics: Breadboard, LDR, Transistors, Diodes</li>
-        <li>Simulation Tools: Tinkercad, Proteus (learning)</li>
-        <li>Languages: C, C++, HTML, CSS</li>
-        <li>Others: GitHub, Basic Circuit Design</li>
-      </ul>
+    <div class="card skills">
+      <span>Breadboarding</span>
+      <span>LDR Circuits</span>
+      <span>Transistors</span>
+      <span>Diodes</span>
+      <span>Tinkercad</span>
+      <span>C</span>
+      <span>C++</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>GitHub</span>
     </div>
   </section>
 
   <footer>
-    <p>Connect with me on <a href="https://github.com/Vector-0007" target="_blank">GitHub</a> | LinkedIn (Add link)</p>
-    <p>© 2025 Vector-0007. All rights reserved.</p>
+    <p>🚀 Designed & Built by Vector-0007 | <a href="https://github.com/Vector-0007" target="_blank">GitHub</a></p>
+    <p>© 2025 All rights reserved.</p>
   </footer>
 </body>
 </html>
